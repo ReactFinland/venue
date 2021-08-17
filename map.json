@@ -103,7 +103,7 @@
                 {
                  "name":"openWebsiteTriggerMessage",
                  "type":"string",
-                 "value":"Press space to join other attendees ta the Brella matchmaking platform"
+                 "value":"Press space to join other attendees at the Brella matchmaking platform"
                 }],
          "type":"tilelayer",
          "visible":true,
