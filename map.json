@@ -569,6 +569,51 @@
         }, 
         {
          "draworder":"topdown",
+         "id":44,
+         "name":"youtube embeds",
+         "objects":[
+                {
+                 "height":315.672172459006,
+                 "id":9,
+                 "name":"youtube - opening",
+                 "properties":[
+                        {
+                         "name":"url",
+                         "type":"string",
+                         "value":"https:\/\/www.youtube.com\/embed\/vpeO0J7FXAE"
+                        }],
+                 "rotation":0,
+                 "type":"website",
+                 "visible":true,
+                 "width":607.623912889769,
+                 "x":0.464305951543452,
+                 "y":0.985837983442423
+                }, 
+                {
+                 "height":314.938991531142,
+                 "id":10,
+                 "name":"youtube chat - opening",
+                 "properties":[
+                        {
+                         "name":"url",
+                         "type":"string",
+                         "value":"https:\/\/www.youtube.com\/live_chat?v=vpeO0J7FXAE&embed_domain=play.workadventu.re"
+                        }],
+                 "rotation":359.89257124463,
+                 "type":"website",
+                 "visible":true,
+                 "width":222.725022979566,
+                 "x":609.103732509501,
+                 "y":1.28139093291054
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":3,
          "name":"floorLayer",
          "objects":[],
@@ -578,8 +623,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":44,
- "nextobjectid":9,
+ "nextlayerid":45,
+ "nextobjectid":11,
  "orientation":"orthogonal",
  "properties":[
         {
