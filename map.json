@@ -205,7 +205,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/corporate.elisa.com\/careers\/"
+                 "value":"https:\/\/corporate.elisa.fi\/rekrytointi\/avoimet_tyopaikat\/careers-ohjelmistotyo-ja-it\/?_ga=2.196994927.252226748.1629096740-1491319370.1603442087"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
