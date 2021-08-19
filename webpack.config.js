@@ -1,53 +1,54 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+// const webpack = require("webpack");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
-    entry: './src/index.ts',
-    devtool: 'inline-source-map',
-    devServer: {
-        //contentBase: '.',
-        static: {
-            directory: '.',
-            serveIndex: true,
-            watch: true
-        },
-        //host: '0.0.0.0',
-        host: 'localhost',
-        //sockPort: 80,
-        allowedHosts: "all",
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-            "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-        }
+  mode: "development",
+  entry: "./src/index.ts",
+  devtool: "inline-source-map",
+  devServer: {
+    //contentBase: '.',
+    static: {
+      directory: ".",
+      serveIndex: true,
+      watch: true,
     },
-    module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                include: path.join(__dirname, 'src'),
-            },
-        ],
+    //host: '0.0.0.0',
+    host: "localhost",
+    //sockPort: 80,
+    allowedHosts: "all",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers":
+        "X-Requested-With, content-type, Authorization",
     },
-    resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ],
-    },
-    output: {
-        filename: 'script.js',
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'
-    },
-    /*externals:[
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        include: path.join(__dirname, "src"),
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  output: {
+    filename: "script.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+  },
+  /*externals:[
         require('webpack-require-http')
     ],*/
-    plugins: [
-        /*new webpack.ProvidePlugin({
+  plugins: [
+    /*new webpack.ProvidePlugin({
             WA: ['@workadventure/iframe-api-typings', 'window.WA']
         }),*/
-        /*new webpack.EnvironmentPlugin({
+    /*new webpack.EnvironmentPlugin({
             'API_URL': null,
             'PUSHER_URL': undefined,
             'UPLOADER_URL': null,
@@ -61,6 +62,5 @@ module.exports = {
             'JITSI_PRIVATE_MODE': null,
             'START_ROOM_URL': null
         })*/
-    ],
-
+  ],
 };

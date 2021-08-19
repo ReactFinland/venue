@@ -3,5 +3,5 @@
 // You can write your WorkAdventure script here, if any.
 // The "WA" global object is available from anywhere.
 
-console.log('Script started successfully');
-WA.openCoWebSite('https://workadventu.re');
+console.log("Script started successfully");
+WA.openCoWebSite("https://workadventu.re");
