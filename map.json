@@ -35,9 +35,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"zone",
-                 "type":"string",
-                 "value":"silent"
+                 "name":"silent",
+                 "type":"bool",
+                 "value":true
                 }],
          "type":"tilelayer",
          "visible":true,
