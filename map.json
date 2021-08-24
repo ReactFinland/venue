@@ -139,7 +139,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/gofore.com\/en\/careers\/frontend-developer\/"
+                 "value":"https:\/\/gofore.com\/en\/careers\/react-developer\/"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
@@ -149,7 +149,7 @@
                 {
                  "name":"openWebsiteTriggerMessage",
                  "type":"string",
-                 "value":"Press space to see a frontend developer position"
+                 "value":"Press space to see a React developer position"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -167,7 +167,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/gofore.com\/en\/careers\/full-stack-developer\/"
+                 "value":"https:\/\/gofore.com\/en\/careers\/react-native-developer\/"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
@@ -177,7 +177,7 @@
                 {
                  "name":"openWebsiteTriggerMessage",
                  "type":"string",
-                 "value":"Press space to see a full stack developer position"
+                 "value":"Press space to see a React Native developer position"
                 }],
          "type":"tilelayer",
          "visible":true,
