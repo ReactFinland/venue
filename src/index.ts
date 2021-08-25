@@ -65,12 +65,19 @@ WA.onInit().then(() => {
   WA.room.onEnterZone("popUpRelexZone", () => {
     currentPopup = WA.ui.openPopup(
       "popUpRelex",
-      "You code, the planet benefits: our work reduces significant amounts of food waste globally. If that’s something that resonates with you, check out our open position and apply.",
+      "You code, the planet benefits: our work reduces significant amounts of food waste globally. If that’s something that resonates with you, check out our open positions and apply.",
       [
         {
-          label: "See the position",
+          label: "See the full stack position",
           callback: (popup) => {
             WA.nav.openCoWebSite("https://grnh.se/f9a830a43us");
+            popup.close();
+          },
+        },
+        {
+          label: "See the software developer position",
+          callback: (popup) => {
+            WA.nav.openCoWebSite("https://grnh.se/7ff36a803us");
             popup.close();
           },
         },
@@ -78,6 +85,23 @@ WA.onInit().then(() => {
     );
   });
   WA.room.onLeaveZone("popUpRelexZone", closePopUp);
+
+  WA.room.onEnterZone("popUpDirectionsZone", () => {
+    currentPopup = WA.ui.openPopup(
+      "popUpDirections",
+      `North: Sponsors, West: 30.08-01.09, South: 02.09, East: 03.09`,
+      [
+        {
+          label: "See the schedule",
+          callback: (popup) => {
+            WA.nav.openCoWebSite("https://react-finland.fi/schedule/");
+            popup.close();
+          },
+        },
+      ]
+    );
+  });
+  WA.room.onLeaveZone("popUpDirectionsZone", closePopUp);
 
   function closePopUp() {
     if (currentPopup !== undefined) {
