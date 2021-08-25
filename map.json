@@ -53,19 +53,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"zone",
                  "type":"string",
-                 "value":"https:\/\/react-finland.fi"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
-                }, 
-                {
-                 "name":"openWebsiteTriggerMessage",
-                 "type":"string",
-                 "value":"West: 30.08-01.09,  South: 02.09,  East: 03.09,  North: Sponsors"
+                 "value":"popUpDirectionsZone"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1535,6 +1525,17 @@
                  "width":360,
                  "x":1738.50013939225,
                  "y":145.525508781712
+                }, 
+                {
+                 "height":256.006714930228,
+                 "id":19,
+                 "name":"popUpDirections",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":300,
+                 "x":1171.96516629944,
+                 "y":1778.40730248662
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1543,7 +1544,7 @@
          "y":0
         }],
  "nextlayerid":87,
- "nextobjectid":19,
+ "nextobjectid":20,
  "orientation":"orthogonal",
  "properties":[
         {
