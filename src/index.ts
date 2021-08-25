@@ -59,6 +59,32 @@ WA.onInit().then(() => {
     "Press space to explore wunderpedia",
     "https://wunder.io/wunderpedia/"
   );
+
+  let currentPopup: ReturnType<typeof WA.ui.openPopup> | undefined;
+
+  WA.room.onEnterZone("popUpRelexZone", () => {
+    currentPopup = WA.ui.openPopup(
+      "popUpRelex",
+      "You code, the planet benefits: our work reduces significant amounts of food waste globally. If that’s something that resonates with you, check out our open position and apply.",
+      [
+        {
+          label: "See the position",
+          callback: (popup) => {
+            WA.nav.openCoWebSite("https://grnh.se/f9a830a43us");
+            popup.close();
+          },
+        },
+      ]
+    );
+  });
+  WA.room.onLeaveZone("popUpRelexZone", closePopUp);
+
+  function closePopUp() {
+    if (currentPopup !== undefined) {
+      currentPopup.close();
+      currentPopup = undefined;
+    }
+  }
 });
 
 function openLinkAtZone(zone: string, messageToShow: string, link: string) {
