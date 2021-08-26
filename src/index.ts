@@ -35,11 +35,6 @@ WA.onInit().then(() => {
     "https://cybercom.com/join-us/"
   );
   openLinkAtZone(
-    "cybercomSite",
-    "Press space to learn more about us",
-    "https://cybercom.com/"
-  );
-  openLinkAtZone(
     "wunderPositions",
     "Press space to see open positions",
     "https://wunder.io/careers/"
