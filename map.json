@@ -878,7 +878,7 @@
                 {
                  "name":"openWebsiteTriggerMessage",
                  "type":"string",
-                 "value":"Press space to see our code of conduct"
+                 "value":"Press space to see our code of conduct. In case you notice any behavior that goes against the CoC,  get in touch at info@react-finland.fi."
                 }],
          "type":"tilelayer",
          "visible":true,
